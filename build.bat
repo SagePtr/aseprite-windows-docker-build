@@ -8,7 +8,7 @@ powershell -command "wget -UseBasicParsing -OutFile skia.zip https://github.com/
 powershell -command "Expand-Archive -Path .\skia.zip -DestinationPath ."
 
 echo "switch to VS dev cmd"
-call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
+call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64
 
 echo "build ninja"
 cd C:\
